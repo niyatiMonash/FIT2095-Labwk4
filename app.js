@@ -10,6 +10,12 @@ app.get("/wiki/:keyword/fit2095/:id", function(req,res){ //by putting :, any val
     console.log(req.url);
     console.log(req.params); //creates an object 
 });
+
+app.get("/report", function(req, res){
+    console.log(req.url);
+    console.log(req.query); //object is inside query 
+});
+
 app.get("/about", function(req, res){
     res.send("This is the about page");
 });
